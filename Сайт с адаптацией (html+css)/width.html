@@ -1,0 +1,14 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+// установливаем обработчик события resize
+$( window ).resize(function() {
+  $( "#width" ).text( $( window ).width() );
+  $( "#height" ).text( $( window ).height() );
+});
+
+// вызовем событие resize
+$(window).resize();
+</script>
+
+<div id="width"></div>
+<div id="height"></div>

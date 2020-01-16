@@ -1,0 +1,93 @@
+@media (max-width: 1280px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1024px) {
+  header .top_header {
+    height: 320px;
+  }
+  header .top_header h1 {
+    padding-top: 40px;
+    font-size: 150px;
+  }
+  header .bottom_header {
+    height: 450px;
+  }
+  .services_provided {
+    height: 550px;
+  }
+  .our_team .team_block .second_p {
+    margin-bottom: 0;
+  }
+  .our_team .team_block .team .person p {
+    font-size: 12px;
+  }
+  .our_team .team_block {
+    padding: 50px 100px 0 100px;
+  }
+  .our_contacts .contact_data form {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'your_name' 'mobile' 'email' 'your_massage' 'sub';
+  }
+  .our_contacts .contact_data h2 {
+    margin-top: 20px;
+  }
+  .our_contacts .contact_data table thead {
+    margin-bottom: 0;
+  }
+  .bg {
+    display: none;
+  }
+  .about_us .about_us_bottom {
+    margin-top: 25px;
+  }
+  .about_us .about_us_top .about_us_top_left h2 {
+    margin-left: 50px;
+  }
+  .about_us .about_us_top .about_us_top_left h3 {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_us .about_us_bottom {
+    flex-direction: column;
+  }
+  .about_us .about_us_bottom .feauters {
+    width: 75%;
+  }
+  .services_provided {
+    background-position: -150px 0;
+  }
+  .services_provided .content {
+    margin-left: 10%;
+  }
+  .our_team .team_block .team {
+    flex-wrap: wrap;
+  }
+  .our_team .team_block .team .person {
+    margin-top: 10px;
+    flex-basis: 100px;
+  }
+  .our_team {
+    height: 530px;
+  }
+  .our_team .team_block .team .person img:hover {
+    width: 90%;
+  }
+  footer .footer_right {
+    display: none;
+  }
+  footer .footer_left {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  footer .footer_left ul:after {
+    margin-top: 30px;
+  }
+  footer .footer_left h3 {
+    margin-top: 50px;
+  }
+}
