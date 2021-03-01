@@ -1,0 +1,29 @@
+.map {
+  position: relative;
+  z-index: 2;
+
+  picture {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  iframe {
+    border: none;
+    width: 100%;
+    display: block;
+  }
+}

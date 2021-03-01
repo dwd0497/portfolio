@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsans.woff" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.documentElement.classList.remove("no-js");
+  </script>
+</head>
+
+<body class="page-body">
+
+  <div class="container">
+    <header class="page-header">
+      <div class="page-header__row">
+        <a href="index.html" class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logotype-mobile.svg" alt="Город Sedona" width="102" height="84">
+          </picture>
+        </a>
+        <button class="page-header__open-btn" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <nav class="page-header__main-nav main-nav">
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a>
+              Фото и видео
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+        <button class="main-nav__close-btn" type="button" aria-label="Закрыть меню"></button>
+      </nav>
+      <div class="promo">
+        <img class="promo__img" src="img/text-sedona.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="229" height="39">
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="lead lead--top">
+        <h1 class="lead__title">Фото и видео</h1>
+        <p class="lead__text">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+      <section class="gallery">
+        <h2 class="visually-hidden">Фотогаллерея</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item gallery__item--first gallery-item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+              <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Дорога на Седону" class="gallery-item__img" width="280" height="280">
+            </picture>
+            <div class="gallery-item__content">
+              <div class="gallery-item__content-column">
+                <h2 class="gallery-item__title">Неродные просторы</h2>
+                <p class="gallery-item__author">Автор фото: Борис</p>
+              </div>
+              <button class="gallery-item__like-btn" type="button" aria-label="Поставить лайк">
+                <svg width="22" height="20">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                1350
+              </button>
+            </div>
+          </li>
+          <li class="gallery__item gallery-item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+              <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Горы и растительность" class="gallery-item__img" width="280" height="280">
+            </picture>
+            <div class="gallery-item__content">
+              <div class="gallery-item__content-column">
+                <h2 class="gallery-item__title">Местная растительность</h2>
+                <p class="gallery-item__author">Автор фото: Сергей</p>
+              </div>
+              <button class="gallery-item__like-btn" type="button" aria-label="Поставить лайк">
+                <svg width="22" height="20">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                143
+              </button>
+            </div>
+          </li>
+          <li class="gallery__item gallery-item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+              <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Горный серпантин" class="gallery-item__img" width="280" height="280">
+            </picture>
+            <div class="gallery-item__content">
+              <div class="gallery-item__content-column">
+                <h2 class="gallery-item__title">Дорога на север</h2>
+                <p class="gallery-item__author">Автор фото: Петр</p>
+              </div>
+              <button class="gallery-item__like-btn" type="button" aria-label="Поставить лайк">
+                <svg width="22" height="20">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                96
+              </button>
+            </div>
+          </li>
+          <li class="gallery__item gallery-item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола" class="gallery-item__img" width="280" height="280">
+            </picture>
+            <div class="gallery-item__content">
+              <div class="gallery-item__content-column">
+                <h2 class="gallery-item__title">Мост Дьявола</h2>
+                <p class="gallery-item__author">Автор фото: Антон</p>
+              </div>
+              <button class="gallery-item__like-btn" type="button" aria-label="Поставить лайк">
+                <svg width="22" height="20">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                254
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="lead">
+          <h2 class="lead__title">Все еще сомневаетесь?</h2>
+          <p class="lead__text">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
+        </div>
+        <div class="gallery__video gallery-video">
+          <div class="gallery-video__preview">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Вступительное видео о городе Седона" width="320" height="201">
+            </picture>
+          </div>
+          <div class="gallery-video__controls">
+            <button class="gallery-video__btn gallery-video__btn--repeat">
+              <svg viewBox="0 0 16 20" width="16" height="20">
+                <use xlink:href="img/sprite.svg#icon-replay"></use>
+              </svg>
+            </button>
+            <div class="gallery-video__scrollbar">
+              <div class="gallery-video__scale"></div>
+              <div class="gallery-video__toggle" tabindex="0"></div>
+            </div>
+            <button class="gallery-video__btn gallery-video__btn--subs">
+              <svg width="32" height="20">
+                <use xlink:href="img/sprite.svg#icon-subs"></use>
+              </svg>
+            </button>
+            <button class="gallery-video__btn gallery-video__btn--fullscreen">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__hashtag">
+        #visitsedona
+      </p>
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item"><a href="" aria-label="Седона в Твиттер" class="social-list__link social-list__link--twitter"></a></li>
+        <li class="social-list__item"><a href="" aria-label="Седона в Фейсбук" class="social-list__link social-list__link--facebook"></a></li>
+        <li class="social-list__item"><a href="" aria-label="Седона в Ютуб" class="social-list__link social-list__link--youtube"></a></li>
+      </ul>
+      <p class="page-footer__copyright">
+        Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">
+          <svg width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          </svg>
+        </a>
+      </p>
+    </footer>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

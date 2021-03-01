@@ -1,0 +1,25 @@
+.hotel-search {
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 64px;
+  }
+}
+
+.hotel-search__btn {
+  @include font-set (21px, 26px, bold);
+
+  display: block;
+  padding: 16px 0;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+
+    margin: 0 auto;
+  }
+}

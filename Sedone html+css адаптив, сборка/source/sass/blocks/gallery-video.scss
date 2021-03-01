@@ -1,0 +1,156 @@
+.gallery-video {
+  position: relative;
+  margin-top: 5px;
+
+  img {
+    width: 100%;
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      height: 500px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 66.6664%;
+    margin: 0 auto;
+  }
+}
+
+.gallery-video__controls {
+  background-color: $normal-gray;
+
+  display: grid;
+
+  width: 280px;
+  margin: 0 auto;
+  margin-top: -45px;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 66px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    grid-template-rows: 93px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba($color: $basic-black, $alpha: 0.6);
+    grid-template-columns: 93px 1fr 1fr 86px 80px;
+  }
+}
+
+.gallery-video__scrollbar {
+  background-color: rgba($color: $basic-black, $alpha: 0.6);
+  padding: 21px 23px;
+
+  position: relative;
+
+  grid-row-start: 1;
+  grid-column: 1 / 6;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    grid-column: 2 / 4;
+    padding: 45px 0;
+  }
+}
+
+.gallery-video__scale {
+  background-color: rgba($color: $basic-white, $alpha: 0.2);
+  height: 3px;
+}
+
+.gallery-video__toggle {
+  background-color: $basic-white;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+
+  position: absolute;
+  top: 19px;
+  left: 58px;
+
+  @media (min-width: $tablet-width) {
+    top: 42px;
+    left: 113px;
+  }
+}
+
+.gallery-video__btn {
+  background-color: transparent;
+  border: none;
+
+  padding: 0;
+
+  grid-row-start: 2;
+
+  &--repeat {
+    grid-column: 1 / 2;
+    margin-left: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 35px;
+    }
+  }
+
+  &--subs {
+    grid-column: 4 / 5;
+    margin-left: 6px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 42px;
+    }
+  }
+
+  &--fullscreen {
+    grid-column: 5 / 6;
+    margin-left: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 19px;
+    }
+  }
+
+
+  @media (min-width: $tablet-width) {
+    grid-row-start: 1;
+  }
+
+
+  svg {
+    display: block;
+
+    fill: $controls-color;
+
+    &:hover,
+    &:focus-within {
+      fill: $light-black;
+    }
+
+    &:active {
+      fill: $light-black;
+      opacity: 0.3;
+    }
+
+    @media (min-width: $tablet-width) {
+      fill: $basic-white;
+
+      &:hover,
+      &:focus-within {
+        fill: $basic-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $basic-white;
+        opacity: 0.3;
+      }
+    }
+  }
+}
