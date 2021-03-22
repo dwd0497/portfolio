@@ -1,0 +1,67 @@
+.btn {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-weight: 500;
+
+    &:hover {
+        box-shadow: 0 0 10px gray;
+        border: 1px solid gray;
+    }
+
+    &:active {
+        box-shadow: inset 0 0 10px gray;
+        border: 1px solid black;
+    }
+}
+
+
+.input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 500;
+    padding: 5px 10px;
+
+    &:hover {
+        border: 1px solid gray;
+    }
+
+    &:focus {
+        border: 1px solid black;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.error-message {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+
+    color: red;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.error .error-message {
+    display: block;
+}
+
+.phone-book {
+    padding: 40px;
+    margin: 20px auto;
+    width: 600px;
+    background: rgb(230, 249, 255);
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 20px;
+}

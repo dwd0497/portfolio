@@ -1,0 +1,35 @@
+.phone-book__item {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+    &-name {
+        flex: 1 0 auto;
+
+        .favorite & {
+            color: chocolate;
+        }
+    }
+
+    &-phone {
+        margin-left: 10px;
+    }
+
+    &-btn-star,
+    &-btn-trash {
+        margin-left: 10px;
+    }
+
+    &-btn-star {
+        color: gray;
+
+        &:hover {
+            color: gray;
+        }
+        .favorite & {
+            color: chocolate;
+        }
+    }
+
+}

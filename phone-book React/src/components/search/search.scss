@@ -1,0 +1,9 @@
+.phone-book__search {
+    display: flex;
+    position: relative;
+    margin: 0 0 20px 0;
+
+    &-input {
+        flex: 1 0 auto;
+    }
+}
