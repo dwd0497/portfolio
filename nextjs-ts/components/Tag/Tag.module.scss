@@ -1,0 +1,53 @@
+@import "styles/vars";
+
+.tag {
+	display: inline-block;
+
+	border: 1px solid;
+	border-radius: 20px;
+
+	&_s {
+		padding: 5px 12px;
+
+		font-size: 12px;
+		line-height: 12px;
+	}
+
+	&_m {
+		padding: 6px 10px;
+
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 14px;
+	}
+
+	&_ghost {
+		color: $c_text;
+		border-color: $c_border;
+		background: transparent;
+	}
+
+	&_red {
+		color: $c_white;
+		border-color: #DE0000;
+		background: #DE0000;
+	}
+
+	&_gray {
+		color: $c_white;
+		border-color: #B3C0D9;
+		background: #B3C0D9;
+	}
+
+	&_green {
+		color: $c_success;
+		border-color: $c_green-light;
+		background: $c_green-light;
+	}
+
+	&_brand {
+		color: $c_brand;
+		border-color: $c_brand;
+		background: transparent;
+	}
+}

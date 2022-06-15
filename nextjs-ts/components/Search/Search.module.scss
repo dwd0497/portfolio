@@ -1,0 +1,25 @@
+@import "../../styles/vars";
+
+.search {
+	position: relative;
+
+	width: 100%;
+
+	&__input {
+		width: 100%;
+	}
+
+	.search__button {
+		position: absolute;
+		top: 50%;
+		right: 4px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		padding: 6px;
+
+		transform: translateY(-50%);
+	}
+}

@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  node:
+    image: docker.pkg.github.com/dwd0497/nextjs-ts/top-app:develop
+    container_name: top-app
+    ports:
+      - "3000:3000"

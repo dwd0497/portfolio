@@ -1,0 +1,48 @@
+@import "styles/vars";
+
+.app {
+	display: grid;
+	grid-template: auto 1fr auto / auto 230px minmax(320px, 1200px) auto;
+	grid-template-areas:
+		". header header ."
+		". sidebar main ."
+		"footer footer footer footer";
+
+	height: 100vh;
+	gap: 40px 32px;
+
+	&__header {
+		grid-area: header;
+	}
+
+	&__sidebar {
+		grid-area: sidebar;
+	}
+
+	&__main {
+		grid-area: main;
+	}
+
+	&__footer {
+		grid-area: footer;
+	}
+}
+
+@media (max-width: $br-m) {
+	.app {
+		grid-template-columns: minmax(320px, 1fr);
+		grid-template-areas:
+			"header"
+			"main"
+			"footer";
+		gap: 20px;
+
+		.app__sidebar {
+			display: none;
+		}
+
+		&__main {
+			padding: 0 20px;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "semi": "warn",
+    "react/display-name": "off"
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react-hooks/recommended"
+  ]
+}

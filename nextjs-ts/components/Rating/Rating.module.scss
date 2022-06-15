@@ -1,0 +1,47 @@
+@import "styles/vars";
+
+.rating {
+	display: flex;
+
+	&__wrapper {
+		position: relative;
+
+		&_error svg {
+			stroke: $c_alert;
+		}
+	}
+
+	&__star {
+		display: block;
+	}
+
+	&__item {
+		padding-right: 5px;
+
+		&:last-of-type {
+			padding-right: 0;
+		}
+
+		&_editable .rating__star {
+			cursor: pointer;
+		}
+
+		&_filled .rating__star {
+			fill: $c_brand;
+		}
+
+		&:not(&_editable) .rating__star {
+			outline: none;
+		}
+	}
+
+	&__errorMessage {
+		position: absolute;
+		bottom: -26px;
+		left: 0;
+
+		white-space: nowrap;
+
+		color: $c_alert;
+	}
+}

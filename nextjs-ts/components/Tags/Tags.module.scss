@@ -1,0 +1,28 @@
+@import "styles/vars";
+
+.tags {
+	margin-top: 30px;
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		margin-right: 10px;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		div::first-letter {
+			text-transform: uppercase;
+		}
+	}
+}

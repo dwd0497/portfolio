@@ -1,0 +1,74 @@
+@import "../../styles/vars";
+
+.product {
+	&__header {
+		display: grid;
+		grid-gap: 20px;
+
+		align-items: center;
+		justify-items: left;
+		grid-template-columns: auto 1fr auto;
+
+		margin-bottom: 20px;
+	}
+
+	&__vacancy,
+	&__advantages {
+		margin-top: 50px;
+	}
+
+	&__seo,
+	&__tags {
+		margin-top: 30px;
+	}
+
+	&__seo {
+		h1 {
+			margin: 20px 0;
+
+			font-size: 26px;
+			font-weight: 500;
+			line-height: 35px;
+		}
+
+		h2 {
+			margin: 15px 0;
+
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 27px;
+		}
+
+		h3 {
+			margin: 10px 0;
+
+			font-size: 22px;
+			font-weight: 500;
+			line-height: 30px;
+		}
+	}
+}
+
+@media (max-width: $br-s) {
+	.product {
+		&__header {
+			grid-gap: 10px;
+			grid-template-columns: auto 1fr;
+			grid-template-areas:
+				"title count"
+				"sort sort";
+		}
+
+		&__title {
+			grid-area: title;
+		}
+
+		&__count {
+			grid-area: count;
+		}
+
+		&__sort {
+			grid-area: sort;
+		}
+	}
+}

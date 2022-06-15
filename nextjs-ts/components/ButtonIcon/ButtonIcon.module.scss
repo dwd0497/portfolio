@@ -1,0 +1,38 @@
+@import "styles/vars";
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 40px;
+	height: 40px;
+
+	border: none;
+	border-radius: 8px;
+	background: $c_brand;
+
+	& svg * {
+		fill: $c_white;
+	}
+
+	&:hover {
+		background: $c_brand-dark;
+	}
+
+	&_white {
+		background: $c_white;
+
+		& svg * {
+			fill: $c_brand;
+		}
+
+		&:hover {
+			background: $c_brand;
+
+			& svg * {
+				fill: $c_white;
+			}
+		}
+	}
+}

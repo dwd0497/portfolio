@@ -1,0 +1,78 @@
+@import "fonts";
+@import "vars";
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+
+	color: $c_text;
+	background: $c_bg;
+
+	font-family: $font-family;
+}
+
+body {
+	min-width: 375px;
+}
+
+a {
+	text-decoration: none;
+
+	color: inherit;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+}
+
+input,
+textarea {
+	font-family: $font-family;
+
+	&::placeholder {
+		color: $c_gray;
+	}
+}
+
+p {
+	margin: 0;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.visually-hidden {
+	position: absolute;
+
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+
+	white-space: nowrap;
+
+	border: 0;
+	clip-path: inset(100%);
+}

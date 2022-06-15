@@ -1,0 +1,36 @@
+@import "styles/vars";
+
+.textarea {
+	width: 100%;
+	min-width: 200px;
+	min-height: 36px;
+	padding: 7px 12px;
+
+	resize: none;
+
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline-color: $c_brand;
+	background: $c_white;
+	box-shadow: 0 4px 4px $c_shadow;
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+
+	&_error {
+		border-color: $c_alert;
+	}
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__errorMessage {
+		position: absolute;
+		bottom: -15px;
+		left: 0;
+
+		color: $c_alert;
+	}
+}

@@ -1,0 +1,115 @@
+@import "../../styles/vars";
+
+.form {
+	display: grid;
+	align-items: center;
+
+	padding: 30px;
+
+	color: $c_text;
+	border-radius: 5px;
+	background: $c_light-brand;
+	box-shadow: 0 4px 4px $c_shadow;
+
+	font-size: 14px;
+	line-height: 24px;
+	grid-gap: 20px 30px;
+	grid-template-columns: 220px 220px 1fr;
+	grid-template-areas:
+		"name title rating"
+		"message message message"
+		"submit submit submit"
+		"feedback feedback feedback";
+
+	&__name {
+		grid-area: name;
+	}
+
+	&__title {
+		grid-area: title;
+	}
+
+	&__rating {
+		display: grid;
+		align-items: center;
+		grid-area: rating;
+		justify-self: end;
+		grid-gap: 20px;
+		grid-template-columns: auto auto;
+	}
+
+	&__message {
+		resize: none;
+		grid-area: message;
+	}
+
+	&__submit {
+		display: grid;
+		align-items: center;
+		grid-area: submit;
+		grid-gap: 20px;
+		grid-template-columns: 120px auto;
+	}
+
+	&__feedback {
+		position: relative;
+
+		display: grid;
+
+		padding: 20px;
+
+		border-radius: 5px;
+		background: $c_green-light;
+		grid-area: feedback;
+		grid-gap: 10px;
+		grid-template-columns: 1fr;
+
+		&_error {
+			background: $c_alert;
+
+			.form__feedbackClose path {
+				stroke: $c_red;
+			}
+		}
+	}
+
+	&__feedbackClose {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+
+		cursor: pointer;
+
+		border: none;
+		background: none;
+	}
+}
+
+@media (max-width: $br-l) {
+	.form {
+		padding: 20px;
+		grid-template-columns: 180px 180px 1fr;
+	}
+}
+
+@media (max-width: $br-s) {
+	.form {
+		padding: 10px;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"rating"
+			"name"
+			"title"
+			"message"
+			"submit"
+			"feedback";
+
+		&__rating {
+			justify-self: start;
+		}
+
+		&__submit {
+			grid-template-columns: 1fr;
+		}
+	}
+}

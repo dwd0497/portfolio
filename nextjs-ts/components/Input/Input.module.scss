@@ -1,0 +1,34 @@
+@import "styles/vars";
+
+.input {
+	width: 100%;
+	padding: 7px 12px;
+
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline-color: $c_brand;
+	background: $c_white;
+	box-shadow: 0 4px 4px $c_shadow;
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+
+	&_error {
+		border-color: $c_alert;
+	}
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__errorMessage {
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+
+		white-space: nowrap;
+
+		color: $c_alert;
+	}
+}
