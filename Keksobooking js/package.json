@@ -11,7 +11,7 @@
     "url": "https://github.com/htmlacademy-javascript/1394821-keksobooking-21/issues"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.27.10",
     "eslint": "7.1.0",
     "eslint-config-htmlacademy": "0.6.0",
     "webpack": "5.4.0",
